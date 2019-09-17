@@ -1,0 +1,54 @@
+{
+  "name": "@digicode/starters",
+  "version": "1.0.0",
+  "description": "generate starters for you",
+  "author": "Digicode Ldt @digicode",
+  "keywords": [
+    "starter",
+    "cli",
+    "boilerplate",
+    "template"
+  ],
+  "bin": {
+    "starters": "./bin/run"
+  },
+  "homepage": "https://github.com/digicode-ltd/starters",
+  "bugs": "https://github.com/digicode-ltd/starters/issues",
+  "repository": "digicode-ltd/starters",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "posttest": "tslint -p . -t stylish",
+    "build": "rimraf lib && tsc -b",
+    "test": "echo NO TESTS",
+    "start": "node ./bin/run"
+  },
+  "dependencies": {
+    "@oclif/command": "^1.5.19",
+    "@oclif/errors": "^1.2.2",
+    "chalk": "^2.4.2",
+    "ejs": "^2.7.1",
+    "inquirer": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/ejs": "^2.6.3",
+    "@types/inquirer": "^6.5.0",
+    "@types/node": "^10.14.18",
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3"
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "/templates"
+  ],
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "oclif": {
+    "bin": "starters"
+  }
+}

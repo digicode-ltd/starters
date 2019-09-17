@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "tslint:recommended"
+  ],
+  "rules": {
+    "no-console": false,
+    "semicolon": [
+      true,
+      "always",
+      "ignore-bound-class-methods"
+    ],
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double",
+      "avoid-escape"
+    ],
+    "object-literal-sort-keys": false
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "defaultSeverity": "error",
+  "rulesDirectory": ["node_modules/tslint-microsoft-contrib"],
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier", "tslint-microsoft-contrib/recommended"],
+  "rules": {
+    // ----------------------------------
+    // TypeScript-specific
+    // ----------------------------------
+    // "adjacent-overload-signatures": false,      // uncomment to override tslint:recommended
+    // "ban-ts-ignore": false,                     // uncomment to define
+    // "ban-types": false,                         // uncomment to override tslint:recommended
+    "member-access": [true, "check-accessor"], // uncomment to override tslint:recommended
+    "member-ordering": false, // uncomment to override tslint:recommended
+    // "no-any": false,                            // uncomment to override tslint:recommended (false)
+    "no-empty-interface": false,                 // uncomment to override tslint:recommended
+    "no-import-side-effect": true,             // uncomment to define
+    "no-inferrable-types": [true, "ignore-params", "ignore-properties"], // uncomment to define
+    // "no-internal-module": false,                // uncomment to override tslint:recommended
+    // "no-magic-numbers": false,                  // uncomment to define
+    "no-namespace": [true, "allow-declarations"], // uncomment to override tslint:recommended
+    "no-non-null-assertion": true, // uncomment to define
+    // "no-parameter-reassignment": false,         // uncomment to define
+    // "no-reference": false,                      // uncomment to override tslint:recommended
+    // "no-unnecessary-type-assertion": false,     // uncomment to define
+    // "no-var-requires": true,                    // uncomment to override tslint:recommended
+    // "only-arrow-functions": false,              // uncomment to override tslint:recommended
+    "prefer-for-of": false, // uncomment to override tslint:recommended
+    // "promise-function-async": false,            // uncomment to define
+    "typedef": [true, "call-signature", "parameter", "property-declaration", "member-variable-declaration"], // uncomment to override tslint:recommended (false)
+    // "unified-signatures": false,                // uncomment to override tslint:recommended
+    // ----------------------------------
+    // Functionality
+    // ----------------------------------
+    // "await-promise":false,                      // uncomment to define
+    "ban-comma-operator": true, // uncomment to define
+    // "ban": false,                               // uncomment to define
+    // "curly": false,                             // uncomment to override tslint:recommended
+    // "forin": false,                             // uncomment to override tslint:recommended
+    "function-constructor": true, // uncomment to define
+    // "import-blacklist": false,                  // uncomment to define
+    // "label-position": false,                    // uncomment to override tslint:recommended
+    // "no-arg": false,                            // uncomment to override tslint:recommended
+    "no-bitwise": false, // uncomment to override tslint:recommended
+    // "no-conditional-assignment": false,         // uncomment to override tslint:recommended
+    "no-console": false, // uncomment to override tslint:recommended  // TODO
+    // "no-construct": false,                      // uncomment to override tslint:recommended
+    // "no-debugger": false,                       // uncomment to override tslint:recommended
+    // "no-duplicate-super": false,                // uncomment to override tslint:recommended
+    "no-duplicate-switch-case": true, // uncomment to define
+    // "no-duplicate-variable": false,             // uncomment to override tslint:recommended
+    // "no-dynamic-delete": false,                 // uncomment to define
+    // "no-empty": false,                          // uncomment to override tslint:recommended
+    // "no-eval": false,                           // uncomment to override tslint:recommended
+    "no-floating-promises": true, // uncomment to define
+    "no-for-in-array": true, // uncomment to define
+    "no-implicit-dependencies": [true, ["@env"]],              // uncomment to define
+    // "no-inferred-empty-object-type": false,     // uncomment to define
+    "no-invalid-template-strings": true, // uncomment to define
+    "no-invalid-this": [true, "check-function-in-method"], // uncomment to override tslint:recommended (false)
+    // "no-misused-new": false,                    // uncomment to override tslint:recommended
+    // "no-null-keyword": false,                   // uncomment to define
+    "no-object-literal-type-assertion": true, // uncomment to define
+    // "no-restricted-globals": false,             // uncomment to define
+    "no-return-await": true, // uncomment to define
+    // "no-shadowed-variable": false,              // uncomment to override tslint:recommended
+    "no-sparse-arrays": true, // uncomment to define
+    // "no-string-literal": false,                 // uncomment to override tslint:recommended
+    // "no-string-throw": false,                   // uncomment to override tslint:recommended
+    // "no-submodule-imports": false,              // uncomment to define
+    "no-switch-case-fall-through": true, // uncomment to override tslint:recommended (false)
+    // "no-this-assignment": false,                // uncomment to define
+    // "no-unbound-method": false,                 // uncomment to define
+    // "no-unnecessary-class": false,              // uncomment to define
+    // "no-unsafe-any": false,                     // uncomment to define // TODO
+    // "no-unsafe-finally": false,                 // uncomment to override tslint:recommended
+    // "no-unused-expression": false,              // uncomment to override tslint:recommended
+    // "no-unused-variable": false,                // uncomment to define // TODO
+    "no-use-before-declare": true, // uncomment to override tslint:recommended (false)
+    // "no-var-keyword": false,                    // uncomment to override tslint:recommended
+    // "no-void-expression": false,                // uncomment to define
+    // "prefer-conditional-expression": false,     // uncomment to define
+    "prefer-object-spread": true, // uncomment to define
+    // "radix": false,                             // uncomment to override tslint:recommended
+    // "restrict-plus-operands": false,            // uncomment to define // TODO
+    // "strict-boolean-expressions": false,        // uncomment to define
+    // "strict-type-predicates": false,            // uncomment to define
+    "switch-default": true, // uncomment to define
+    // "triple-equals": false,                     // uncomment to override tslint:recommended
+    // "typeof-compare": false,                    // uncomment to override tslint:recommended (false) [deprecated]
+    "unnecessary-constructor": true, // uncomment to define
+    // "use-default-type-parameter": false,        // uncomment to define
+    // "use-isnan": false,                         // uncomment to override tslint:recommended
+    // ----------------------------------
+    // Maintainability
+    // ----------------------------------
+    // "cyclomatic-complexity": false,             // uncomment to override tslint:recommended (false)
+    // "deprecation": false,                       // uncomment to define
+    "max-classes-per-file": false, // uncomment to override tslint:recommended
+    // "max-file-line-count": false,               // uncomment to define
+    "no-default-export": true, // uncomment to define
+    // "no-default-import": false,                 // uncomment to define
+    "no-duplicate-imports": [true, { "allow-namespace-imports": true }], // uncomment to define
+    "no-mergeable-namespace": true, // uncomment to define
+    "no-require-imports": true, // uncomment to define
+    "object-literal-sort-keys": false, // uncomment to override tslint:recommended
+    // "prefer-const": false,                      // uncomment to override tslint:recommended
+    // "prefer-readonly": false,                   // uncomment to define
+    // ----------------------------------
+    // Style
+    // ----------------------------------
+    "array-type": false, // uncomment to override tslint:recommended
+    // "arrow-return-shorthand": false,            // uncomment to override tslint:recommended
+    // "binary-expression-operand-order": false,   // uncomment to define
+    // "callable-types": false,                    // uncomment to override tslint:recommended
+    // "class-name": false,                        // uncomment to override tslint:recommended
+    // "comment-format": false,                    // uncomment to override tslint:recommended
+    // "comment-type": false,                      // uncomment to define
+    // "completed-docs": false,                    // uncomment to define
+    // "encoding": false,                          // uncomment to define
+    // "file-header": false,                       // uncomment to define
+    // "file-name-casing": false,                  // uncomment to define
+    // "increment-decrement": false,               // uncomment to define
+    // "interface-name": false,                    // uncomment to override tslint:recommended
+    // "interface-over-type-literal": false,       // uncomment to override tslint:recommended
+    // "match-default-export-name": false,         // uncomment to define
+    // "newline-per-chained-call": false,          // uncomment to override tslint-config-prettier
+    // "no-angle-bracket-type-assertion": false,   // uncomment to override tslint:recommended
+    // "no-boolean-literal-compare": false,        // uncomment to define
+    // "no-parameter-properties": false,           // uncomment to override tslint:recommended (false)
+    // "no-redundant-jsdoc": false,                // uncomment to define
+    // "no-reference-import": false,               // uncomment to override tslint:recommended
+    // "no-unnecessary-callback-wrapper": false,   // uncomment to define
+    // "no-unnecessary-initializer": false,        // uncomment to override tslint:recommended
+    "object-literal-shorthand": false, // uncomment to override tslint:recommended
+    // "one-line": false,                          // uncomment to override tslint:recommended and tslint-config-prettier
+    // "one-variable-per-declaration": false,      // uncomment to override tslint:recommended
+    "ordered-imports": false, // uncomment to override tslint:recommended
+    // "prefer-function-over-method": false,       // uncomment to define
+    // "prefer-method-signature": false,           // uncomment to define
+    // "prefer-switch": false,                     // uncomment to define
+    "prefer-template": [true, "allow-single-concat"],                   // uncomment to define
+    // "prefer-while": false,                      // uncomment to define
+    // "return-undefined": false,                  // uncomment to define
+    // "space-before-function-paren": false,       // uncomment to override tslint:recommended and tslint-config-prettier
+    // "space-within-parens": false,               // uncomment to override tslint-config-prettier
+    // "switch-final-break": false,                // uncomment to define
+    "type-literal-delimiter": true, // uncomment to override tslint-config-prettier
+    //  "unnecessary-bind": false,                 // uncomment to define
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-pascal-case",
+      "allow-leading-underscore"
+    ], // uncomment to override tslint:recommended
+    // ----------------------------------
+    // Formatting
+    // ----------------------------------
+    // "align": false,                             // uncomment to override tslint:recommended and tslint-config-prettier
+    // "arrow-parens": false,                      // uncomment to override tslint:recommended and tslint-config-prettier
+    // "eofline": false,                           // uncomment to override tslint:recommended and tslint-config-prettier
+    // "import-spacing": false,                    // uncomment to override tslint:recommended and tslint-config-prettier
+    // "indent": false,                            // uncomment to override tslint:recommended and tslint-config-prettier
+    // "jsdoc-format": false,                      // uncomment to override tslint:recommended
+    // "linebreak-style": false,                   // uncomment to override tslint-config-prettier
+    "max-line-length": [
+      true,
+      {
+        "ignore-pattern": "import",
+        "limit": 120
+      }
+    ], // uncomment to override tslint:recommended and tslint-config-prettier
+    // "newline-before-return": false,             // uncomment to define
+    // "new-parens": false,                        // uncomment to override tslint:recommended and tslint-config-prettier
+    // "no-consecutive-blank-lines": false,        // uncomment to override tslint:recommended and tslint-config-prettier
+    // "no-irregular-whitespace": false,           // uncomment to override tslint-config-prettier
+    "no-trailing-whitespace": true, // uncomment to override tslint:recommended and tslint-config-prettier
+    // "number-literal-format": false,             // uncomment to override tslint-config-prettier
+    "quotemark": [true, "single", "jsx-double", "avoid-escape"], // uncomment to override tslint:recommended and tslint-config-prettier
+    "semicolon": [true, "always", "ignore-bound-class-methods"], // uncomment to override tslint:recommended and tslint-config-prettier
+    "trailing-comma": [
+      true,
+      {
+        "singleline": "never",
+        "multiline": {
+          "objects": "always",
+          "arrays": "always",
+          "functions": "ignore",
+          "typeLiterals": "ignore"
+        },
+        "esSpecCompliant": true
+      }
+    ], // uncomment to override tslint:recommended and tslint-config-prettier
+    // "typedef-whitespace": false,                // uncomment to override tslint:recommended and tslint-config-prettier
+    // "whitespace": false,                        // uncomment to override tslint:recommended and tslint-config-prettier
+    // ----------------------------------
+    // "jsx-alignment": true, // uncomment to override tslint-react
+    "jsx-boolean-value": false, // uncomment to override tslint-react
+    // "jsx-curly-spacing": [true, "never"], // uncomment to override tslint-react
+    // "jsx-equals-spacing": [true, "never"], // uncomment to override tslint-react
+    // "jsx-key": true, // uncomment to override tslint-react
+    // "jsx-no-bind": true, // uncomment to override tslint-react
+    "jsx-no-lambda": false, // uncomment to override tslint-react
+    // "jsx-no-multiline-js": true, // uncomment to override tslint-react
+    // "jsx-no-string-ref": true, // uncomment to override tslint-react
+    // "jsx-self-close": true, // uncomment to override tslint-react
+    // "jsx-wrap-multiline": true // uncomment to override tslint-react
+    // ----------------------------------
+    // tslint-microsoft-contrib
+    // ----------------------------------
+    "no-relative-imports": false,
+    "import-name": false,
+    "react-this-binding-issue": false,
+    "function-name": false,
+    "react-a11y-input-elements": false,
+    "react-a11y-role-has-required-aria-props": false,
+    "react-a11y-event-has-role": false,
+    "use-simple-attributes": false,
+    "insecure-random": false,
+    "export-name": false,
+    "no-http-string": false
+  },
+  "jsRules": true,
+  "linterOptions": {
+    "exclude": ["node_modules/**/*.ts"]
+  }
+}
